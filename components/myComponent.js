@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 //class based component
-class MyComponent extends Component {
+class MyComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {message: "Welcome to my Sandbox!"};
@@ -8,7 +8,9 @@ class MyComponent extends Component {
 
     render() {
         return <h1>{this.state.message}</h1>
-    }
+    };
+
+   
 }
 
 export default MyComponent;
